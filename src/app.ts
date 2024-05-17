@@ -14,10 +14,6 @@ abstract class Department {
     return { name: name };
   }
 
-  static createEmployee(name: string) {
-    return { name: name };
-  }
-
   abstract describe(this: Department): void;
 
   addEmployee(employee: string) {
@@ -36,7 +32,7 @@ class ITDepartment extends Department {
   }
 
   describe() {
-    console.log('IT Department -ID: ' + this.id);
+    console.log("IT Department -ID: " + this.id);
   }
 }
 
@@ -63,7 +59,7 @@ class AccountingDepartment extends Department {
   }
 
   describe() {
-    console.log('Accounting Department - ID: ' + this.id)
+    console.log("Accounting Department - ID: " + this.id);
   }
 
   addEmployee(name: string) {
